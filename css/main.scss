@@ -1,0 +1,212 @@
+// Start General Styles
+:root {
+  --sm-font: "Kaisei Tokumin", serif;
+  --lg-font: "Poppins", sans-serif;
+  --red: rgb(256, 0, 0);
+}
+
+body {
+  font-family: var(--sm-font);
+}
+.nav-badge {
+  background-color: var(--red) !important;
+}
+.btn:not(.nav-btns button) {
+  background-color: #fff;
+  color: rgba(85, 85, 85);
+  padding: 10px 28px;
+  border-radius: 25px;
+  border: 1px solid rgb(85, 85, 85);
+  &:hover {
+    background-color: var(--red) !important;
+    color: #fff !important;
+    border-color: var(--red);
+  }
+}
+.title {
+  h2 {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 4px;
+      height: 50px;
+      background-color: var(--red);
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+// End General Styles
+// Start nav
+// FIXME: Remove border-bottom on nav-item
+.navbar {
+  box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+  .navbar-brand {
+    img {
+      width: 30px;
+    }
+    span {
+      letter-spacing: 2px;
+      font-family: var(--lg-font);
+    }
+  }
+  .nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+  }
+  .nav-link:hover {
+    color: var(--red);
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-item {
+    border-bottom: none;
+  }
+}
+// End nav
+// Start header
+#header {
+  background: url("/images/banner-img-1.jpg") top/cover no-repeat;
+  .btn:not(.nav-btn button) {
+    background-color: #fff;
+    color: rgb(159, 155, 155);
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+    &:hover {
+      background-color: var(--red);
+      color: #fff;
+      border: 1px solid var(--red);
+    }
+  }
+  .carousel-inner {
+    h1 {
+      font-style: 60px;
+      font-family: var(--lg-font);
+    }
+    .carousel-item {
+      .btn {
+        border-color: #fff;
+        &:hover {
+          border-color: var(--red);
+        }
+      }
+    }
+  }
+}
+// End header
+// Start collection
+#collection {
+  .active-filter-btn {
+    background-color: var(--red) !important;
+    color: #fff !important;
+    border-color: var(--red) !important;
+    border-radius: 25px;
+  }
+  .collection-list {
+    .collection-img {
+      span {
+        top: 20px !important;
+        right: 20px !important;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background-color: var(--red);
+      }
+    }
+    .rating {
+      span {
+        i.fa-star {
+          color: var(--red) !important;
+        }
+      }
+    }
+  }
+}
+
+// End collection
+// Start Special products
+#special {
+  .special-list {
+    .special-img {
+      span {
+        top: 20px;
+        right: 20px;
+        color: var(--red) !important;
+      }
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+      img {
+        transition: all 0.3s ease;
+      }
+    }
+    .btn {
+      padding: 8px 20px !important;
+    }
+  }
+}
+// End Special products
+// Start offers
+#offers {
+  background: url(../images/offer_img.jpg) center/cover no-repeat;
+  .row {
+    min-height: 80vh;
+    span {
+      font-size: 20px;
+    }
+    h2 {
+      font-family: var(--lg-font);
+      font-size: 60px;
+    }
+    .btn {
+      border-color: transparent;
+    }
+  }
+}
+// End offers
+// Start About
+#about{
+  background-color: rgba(0, 0, 0, 0.05);
+}
+// End About
+// Start Newsletter
+#newsletter{
+  background-color: rgba(179,179,179,0.05);
+  p{
+    max-width: 500px;
+  }
+  .input-group{
+    max-width: 500px;
+    .form-control{
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+    }
+    .btn{
+      background-color: var(--red);
+      border-color: var(--red);
+      color: #fff;
+      &:hover{
+        background-color: #000 !important;
+        border-color: #000 !important;
+      }
+    }
+  }
+}
+// End Newsletter
+// Start Footer
+footer{
+  .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+  }
+  a{
+    transition: color 0.3s ease;
+    &:hover{
+      color:var(--red) !important;
+    }
+  }
+}
+// End Footer

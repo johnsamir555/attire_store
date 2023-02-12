@@ -1,0 +1,172 @@
+:root {
+  --sm-font: "Kaisei Tokumin", serif;
+  --lg-font: "Poppins", sans-serif;
+  --red: rgb(256, 0, 0);
+}
+
+body {
+  font-family: var(--sm-font);
+}
+
+.nav-badge {
+  background-color: var(--red) !important;
+}
+
+.btn:not(.nav-btns button) {
+  background-color: #fff;
+  color: rgb(85, 85, 85);
+  padding: 10px 28px;
+  border-radius: 25px;
+  border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover {
+  background-color: var(--red) !important;
+  color: #fff !important;
+  border-color: var(--red);
+}
+
+.title h2::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 50px;
+  background-color: var(--red);
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar {
+  box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-brand img {
+  width: 30px;
+}
+.navbar .navbar-brand span {
+  letter-spacing: 2px;
+  font-family: var(--lg-font);
+}
+.navbar .nav-item {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+.navbar .nav-link:hover {
+  color: var(--red);
+}
+
+@media (min-width: 992px) {
+  .nav-item {
+    border-bottom: none;
+  }
+}
+#header {
+  background: url("/images/banner-img-1.jpg") top/cover no-repeat;
+}
+#header .btn:not(.nav-btn button) {
+  background-color: #fff;
+  color: rgb(159, 155, 155);
+  border-radius: 25px;
+  border: 1px solid rgb(85, 85, 85);
+}
+#header .btn:not(.nav-btn button):hover {
+  background-color: var(--red);
+  color: #fff;
+  border: 1px solid var(--red);
+}
+#header .carousel-inner h1 {
+  font-style: 60px;
+  font-family: var(--lg-font);
+}
+#header .carousel-inner .carousel-item .btn {
+  border-color: #fff;
+}
+#header .carousel-inner .carousel-item .btn:hover {
+  border-color: var(--red);
+}
+
+#collection .active-filter-btn {
+  background-color: var(--red) !important;
+  color: #fff !important;
+  border-color: var(--red) !important;
+  border-radius: 25px;
+}
+#collection .collection-list .collection-img span {
+  top: 20px !important;
+  right: 20px !important;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: var(--red);
+}
+#collection .collection-list .rating span i.fa-star {
+  color: var(--red) !important;
+}
+
+#special .special-list .special-img span {
+  top: 20px;
+  right: 20px;
+  color: var(--red) !important;
+}
+#special .special-list .special-img:hover img {
+  transform: scale(1.2);
+}
+#special .special-list .special-img img {
+  transition: all 0.3s ease;
+}
+#special .special-list .btn {
+  padding: 8px 20px !important;
+}
+
+#offers {
+  background: url(../images/offer_img.jpg) center/cover no-repeat;
+}
+#offers .row {
+  min-height: 80vh;
+}
+#offers .row span {
+  font-size: 20px;
+}
+#offers .row h2 {
+  font-family: var(--lg-font);
+  font-size: 60px;
+}
+#offers .row .btn {
+  border-color: transparent;
+}
+
+#about {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#newsletter {
+  background-color: rgba(179, 179, 179, 0.05);
+}
+#newsletter p {
+  max-width: 500px;
+}
+#newsletter .input-group {
+  max-width: 500px;
+}
+#newsletter .input-group .form-control {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+#newsletter .input-group .btn {
+  background-color: var(--red);
+  border-color: var(--red);
+  color: #fff;
+}
+#newsletter .input-group .btn:hover {
+  background-color: #000 !important;
+  border-color: #000 !important;
+}
+
+footer .brand {
+  font-family: var(--lg-font);
+  letter-spacing: 2px;
+}
+footer a {
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: var(--red) !important;
+}/*# sourceMappingURL=main.css.map */
