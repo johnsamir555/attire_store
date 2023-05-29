@@ -39,7 +39,6 @@ body {
 }
 // End General Styles
 // Start nav
-// FIXME: Remove border-bottom on nav-item
 .navbar {
   box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
   .navbar-brand {
@@ -50,9 +49,6 @@ body {
       letter-spacing: 2px;
       font-family: var(--lg-font);
     }
-  }
-  .nav-item {
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
   }
   .nav-link:hover {
     color: var(--red);
@@ -168,27 +164,27 @@ body {
 }
 // End offers
 // Start About
-#about{
+#about {
   background-color: rgba(0, 0, 0, 0.05);
 }
 // End About
 // Start Newsletter
-#newsletter{
-  background-color: rgba(179,179,179,0.05);
-  p{
+#newsletter {
+  background-color: rgba(179, 179, 179, 0.05);
+  p {
     max-width: 500px;
   }
-  .input-group{
+  .input-group {
     max-width: 500px;
-    .form-control{
+    .form-control {
       border-top-left-radius: 25px;
       border-bottom-left-radius: 25px;
     }
-    .btn{
+    .btn {
       background-color: var(--red);
       border-color: var(--red);
       color: #fff;
-      &:hover{
+      &:hover {
         background-color: #000 !important;
         border-color: #000 !important;
       }
@@ -197,15 +193,15 @@ body {
 }
 // End Newsletter
 // Start Footer
-footer{
-  .brand{
+footer {
+  .brand {
     font-family: var(--lg-font);
     letter-spacing: 2px;
   }
-  a{
+  a {
     transition: color 0.3s ease;
-    &:hover{
-      color:var(--red) !important;
+    &:hover {
+      color: var(--red) !important;
     }
   }
 }
