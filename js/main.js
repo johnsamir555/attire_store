@@ -1,6 +1,13 @@
 // init Isotope
-var $grid = $(".collection-list").isotope({
-  // options
+var iso = new Isotope( '.grid', {
+  itemSelector: '.collection-list',
+  getSortData: {
+    name: '.name',
+    category: '[data-category]'
+  },
+  masonry: {
+    columnWidth: 200
+  }
 });
 // filter items on button click
 $(".filter-button-group").on("click", "button", function () {
